@@ -1,0 +1,162 @@
+								ASSIGNMENT - 1
+
+Assignment 1.  Cloud Computing – Types of Cloud:
+
+Cloud computing is usually described in one of two ways. Either based on the deployment model, or on the service that the cloud is offering.
+
+* Based on a deployment model, we can classify cloud as:
+
+    1.public,
+    2.private,
+    3.hybrid
+    4.community cloud
+
+* Based on a service the cloud model is offering, we are speaking of either:
+
+
+    1.IaaS (Infrastructure-as-a-Service)
+    2.PaaS (Platform-as-a-Service)
+    3.SaaS (Software-as-a-Service)
+    4.or, Storage, Database, Information, Process, Application, Integration, Security, Management, Testing-as-a-service
+
+
+
+Public Cloud:
+
+When we talk about public cloud, we mean that the whole computing infrastructure is located on the premises of a cloud computing company that offers the cloud service. The location remains, thus, separate from the customer and he has no physical control over the infrastructure.
+
+
+
+Private Cloud:
+
+Private Cloud provides the same benefits of Public Cloud, but uses dedicated, private hardware. Private cloud means using a cloud infrastructure (network) solely by one customer/organization. It is not shared with others, yet it is remotely located.  The companies have an option of choosing an on-premise private cloud as well, which is more expensive, but they do have a physical control over the infrastructure.
+
+
+With our Private Cloud you’ll get:
+
+    * Increased redundancy
+    * Decreased provisioning time for new servers
+    * Saved capital by eliminating hardware support contracts
+    * Quicker expendability compared to hosting your own physical servers
+    * Use of dedicated, private hardware
+
+
+
+Hybrid Cloud:
+
+Hybrid cloud, of course, means, using both private and public clouds, depending on their purpose.
+
+For example, public cloud can be used to interact with customers, while keeping their data secured through a private cloud.
+
+Most people associate traditional public cloud service with elastic scalability and the ability to handle constant shifts in demand. However, performance issues can arise for certain data-intensive or high-availability workloads.
+
+
+
+
+i) Google Cloud Platform (GCP) 
+
+Google Cloud Platform is a suite of public cloud computing services offered by Google. The platform includes a range of hosted services for compute, storage and application development that run on Google hardware. Google Cloud Platform services can be accessed by software developers, cloud administrators and other enterprise IT professionals over the public internet or through a dedicated network connection.
+
+
+Google Cloud Platform offers services for compute, storage, networking, big data, machine learning and the internet of things (IoT), as well as cloud management, security and developer tools. The core cloud computing products in Google Cloud Platform include:
+
+
+    * Google Compute Engine, which is an infrastructure-as-a-service (IaaS) offering that provides users with virtual machine instances for workload hosting.
+    * Google App Engine, which is a platform-as-a-service (PaaS) offering that gives software developers access to Google's scalable hosting. Developers can also use a software developer kit (SDK) to develop software products that run on App Engine.
+    * Google Cloud Storage, which is a cloud storage platform designed to store large, unstructured data sets. Google also offers database storage options, including Cloud Datastore for NoSQL nonrelational storage, Cloud SQL for MySQL fully relational storage and Google's native Cloud Bigtable database.
+    * Google Container Engine, which is a management and orchestration system for Docker containers that runs within Google's public cloud. Google Container Engine is based on the Google Kubernetes container orchestration engine.
+
+
+
+ii) Amazon Web Services (AWS) 
+
+Amazon Web Services (AWS) is a comprehensive, evolving cloud computing platform provided by Amazon. It provides a mix of infrastructure as a service (IaaS), platform as a service (PaaS) and packaged software as a service (SaaS) offerings.
+
+AWS launched in 2006 from the internal infrastructure that Amazon.com built to handle its online retail operations. AWS was one of the first companies to introduce a pay-as-you-go cloud computing model that scales to provide users with compute, storage or throughput as needed.
+
+Amazon Web Services provides services from dozens of data centers spread across availability zones (AZs) in regions across the world. An AZ represents a location that typically contains multiple physical data centers, while a region is a collection of AZs in geographic proximity connected by low-latency network links. An AWS customer can spin up virtual machines (VMs) and replicate data in different AZs to achieve a highly reliable infrastructure that is resistant to failures of individual servers or an entire data center.
+
+
+
+iii) OpenStack 
+
+OpenStack is a collection of open source software modules that provides a framework to create and manage both public cloud and private cloud infrastructure.
+
+What OpenStack does:
+
+To create a cloud computing environment, an organization typically builds off of its existing virtualized infrastructure, using a well-established hypervisor such as VMware vSphere, Microsoft Hyper-V or KVM. But cloud computing goes beyond just virtualization. A public or private cloud also provides a high level of provisioning and lifecycle automation, user self-service, cost reporting and billing, orchestration and other features.
+
+
+iv) Microsoft Azure (Windows Azure) 
+
+Microsoft Azure, formerly known as Windows Azure, is Microsoft's public cloud computing platform. It provides a range of cloud services, including those for compute, analytics, storage and networking. Users can pick and choose from these services to develop and scale new applications, or run existing applications, in the public cloud.
+
+Microsoft Azure is widely considered both a Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offering.
+
+
+
+
+
+
+
+
+Assignment 3.  Type 1 and Type 2 Hypervisors:
+
+* Type 1 hypervisors:
+
+A Type 1 hypervisor runs directly on the host machine's physical hardware, and it's referred to as a bare-metal hypervisor; it doesn't have to load an underlying OS first. With direct access to the underlying hardware and no other software -- such as OSes and device drivers -- to contend with, Type 1 hypervisors are regarded as the most efficient and best-performing hypervisors available for enterprise computing. Hypervisors such as VMware ESXi, Microsoft Hyper-V server and open source KVM are examples of Type 1 hypervisors.
+
+Hypervisors that run directly on physical hardware are also highly secure. The security flaws and vulnerabilities that are often endemic to OSes are absent from bare-metal hypervisors because the attack surface of the underlying OS is eliminated. This ensures the logical isolation of every guest VM against malicious software and activity.
+
+
+* Type 2 hypervisors:
+
+A Type 2 hypervisor is typically installed on top of an existing OS, and it's called a hosted hypervisor because it relies on the host machine's pre-existing OS to manage calls to CPU, memory, storage and network resources. Type 2 hypervisors include VMware Fusion, Oracle VM VirtualBox, Oracle VM Server for x86, Oracle Solaris Zones, Parallels and VMware Workstation.
+
+Type 2 hypervisors trace their roots back to the early days of x86 virtualization when existing systems already used OSes and the hypervisor was deployed as a higher software layer. Although the purpose and goals of Type 1 and Type 2 hypervisors are identical, the presence of an underlying OS with Type 2 hypervisors introduced unavoidable latency; all of the hypervisor's activities and the work of every VM had to pass through the host OS. Also, any security flaws or vulnerabilities in the host OS could potentially compromise all of the VMs running above it.
+
+Examples of Type 1 Hypervisor:
+
+i) KVM :
+
+The open-source KVM (or Kernel-Based Virtual Machine) is a Linux-based type-1 hypervisor that can be added to a most Linux operating systems including Ubuntu, SUSE, and Red Hat Enterprise Linux. It supports most common Linux operating systems, Solaris, and Windows. Most hypervisors that offer KVM offer additional management tools on top such as Red Hat’s Virtual Machine Manager.
+
+
+ii) Red Hat Enterprise Virtualization (RHEV):
+
+Red Hat Enterprise Virtualization (RHEV) is a commercial implementation of the KVM Type-1 hypervisor. Red Hat Enterprise Virtualization uses SPICE protocol and VDSM (Virtual Desktop Server Manager) with a RHEL-based centralized management server.
+
+
+iii) Xen / Citrix XenServer:
+
+Xen is a type-1 bare-metal hypervisor. Just as Red Hat Enterprise Virtualization uses KVM, Citrix uses Xen in the commercial XenServer. In 2007 Citrix bought XenSource, Inc, who supported Xen. Today, the Xen open source projects and community are at Xen.org.
+
+
+iv) Microsoft Windows Server 2012 Hyper-V (or the free Hyper-V Server 2012):
+
+Along with XenServer and vSphere (next on the list), Hyper-V is one of the top 3 Tier-1 hypervisors (frequently flip/flopping between 2nd and 3rd place with XenServer). First released with Windows Server, Hyper-V has now been greatly enhanced with Windows Server 2012 Hyper-V
+
+
+v) VMware vSphere / ESXi:
+
+The leader in the Tier-1 hypervisors is VMware with their vSphere/ESXi product – available in a free edition and 5 commercial editions. VMware led the market in developing innovative features such as memory overcommitment, vMotion, Storage vMotion, Fault Tolerance, and more. 
+
+
+
+Examples of Type 2 Hypervisor:
+
+
+i) VMware Fusion:
+
+VMware Fusion is software from VMware that virtualizes Windows operating systems (OSes) and application programs so they can be used on Macintosh computers.
+ 
+
+ii) Oracle Virtual Box:
+
+Oracle VM VirtualBox (formerly Sun VirtualBox, Sun xVM VirtualBox and Innotek VirtualBox) is a free and open-source hosted hypervisor for x86 computers currently being developed by Oracle Corporation. Developed initially by Innotek GmbH, it was acquired by Sun Microsystems in 2008 which was in turn acquired by Oracle in 2010. 
+
+iii) VMware Workstation Pro :
+
+VMware Workstation Pro is a 64-bit hosted hypervisor intended to implement virtualization on Microsoft Windows and Linux endpoint computers, such as desktop systems.
+
+
